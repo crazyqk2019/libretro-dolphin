@@ -91,6 +91,7 @@ if(WIN32)
     target_link_libraries(inputcommon
       PRIVATE
       dinput8
+      dxguid
     )
   endif()
 elseif(APPLE)

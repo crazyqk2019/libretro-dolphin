@@ -301,3 +301,7 @@ elseif(WIN32)
     target_link_libraries(common PRIVATE comctl32 comdlg32 winmm shlwapi)
   endif()
 endif()
+
+if(MINGW)
+    target_link_libraries(common PRIVATE sfml-network sfml-system)
+endif()

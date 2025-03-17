@@ -12,6 +12,7 @@
 #include <string>
 #include <sys/stat.h>
 #include <vector>
+#include <memory>
 
 #include "Common/Assert.h"
 #include "Common/Common.h"

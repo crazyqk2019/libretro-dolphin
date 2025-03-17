@@ -7,6 +7,7 @@
 #include <array>
 #include <cstddef>
 #include <string>
+#include <algorithm>
 
 #include <fmt/format.h>
 

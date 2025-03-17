@@ -35,7 +35,7 @@ protected:
 
 struct SamplerStateSet final
 {
-  static const u32 NUM_SAMPLERS_PER_GROUP = 8;
+  static constexpr u32 NUM_SAMPLERS_PER_GROUP = 8;
   SamplerState states[NUM_SAMPLERS_PER_GROUP];
 };
 

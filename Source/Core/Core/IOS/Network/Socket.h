@@ -9,6 +9,10 @@
 #include <iphlpapi.h>
 #include <ws2tcpip.h>
 
+#ifdef _MSC_VER
+#include <chrono>
+#endif
+
 typedef pollfd pollfd_t;
 
 #define poll WSAPoll

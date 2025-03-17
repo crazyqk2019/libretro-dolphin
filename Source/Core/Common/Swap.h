@@ -7,6 +7,10 @@
 #include <cstring>
 #include <type_traits>
 
+#ifdef _MSC_VER
+#include <intrin.h>
+#endif
+
 #ifdef __APPLE__
 #include <libkern/OSByteOrder.h>
 #elif defined(__linux__)

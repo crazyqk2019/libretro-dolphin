@@ -18,7 +18,7 @@
 // TODO: Remove this and use numeric_limits directly whenever this bug is fixed.
 // See Visual Studio bug # 128935 "std::numeric_limits<float>::signaling_NaN() is broken"
 
-#include <ymath.h>
+//#include <ymath.h>
 
 #endif  // _MSC_VER
 
@@ -34,16 +34,16 @@ constexpr T SNANConstant()
 
 // See workaround note above.
 
-template <>
-constexpr double SNANConstant()
-{
-  return (_CSTD _Snan._Double);
-}
-template <>
-constexpr float SNANConstant()
-{
-  return (_CSTD _Snan._Float);
-}
+//template <>
+//constexpr double SNANConstant()
+//{
+//  return (_CSTD _Snan._Double);
+//}
+//template <>
+//constexpr float SNANConstant()
+//{
+//  return (_CSTD _Snan._Float);
+//}
 
 #endif  // _MSC_VER
 
